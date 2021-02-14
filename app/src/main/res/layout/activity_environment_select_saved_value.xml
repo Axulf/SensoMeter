@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/LinearMainSelectTypeSavedValue">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/environment_type_text"
+        android:textColor="@color/white"
+        android:background="@color/black"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="true"
+        android:textStyle="italic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/environment_selector_text"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginStart="7dp"
+        android:textStyle="italic" />
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/radio_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ambient_temperature_text" />
+        <RadioButton
+            android:id="@+id/radio_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/light_text" />
+        <RadioButton
+            android:id="@+id/radio_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pressure_text" />
+        <RadioButton
+            android:id="@+id/radio_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/relative_humidity_text" />
+    </RadioGroup>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:backgroundTint="@color/navy"
+        android:textColor="@color/white"
+        android:text="@string/view_value_text"
+        android:onClick="OpenDisplaySelectedValue"/>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sensometer">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SensoMeter">
+        <activity android:name=".DisplaySelectedValue"></activity>
+        <activity android:name=".PositionSelectSavedValue" />
+        <activity android:name=".MotionSelectSavedValue" />
+        <activity android:name=".EnvironmentSelectSavedValue" />
+        <activity android:name=".LightFeatures" />
+        <activity android:name=".PressureFeatures" />
+        <activity android:name=".HumidityFeatures" />
+        <activity android:name=".TemperatureFeatures" />
+        <activity android:name=".ProximityFeatures" />
+        <activity android:name=".MagneticFieldFeatures" />
+        <activity android:name=".GeorotationFeatures" />
+        <activity android:name=".LinearAccelerationFeatures" />
+        <activity android:name=".GyroscopeFeatures" />
+        <activity android:name=".GravityFeatures" />
+        <activity android:name=".ProximitySensors" />
+        <activity android:name=".MagneticFieldSensors" />
+        <activity android:name=".GeoRotationSensors" />
+        <activity android:name=".LinearAccelerationSensors" />
+        <activity android:name=".GyroscopeSensors" />
+        <activity android:name=".GravitySensors" />
+        <activity android:name=".AccelerometerSensors" />
+        <activity android:name=".RelativeHumiditySensors" />
+        <activity android:name=".PressureSensors" />
+        <activity android:name=".LightSensors" />
+        <activity android:name=".TemperatureSensors" />
+        <activity android:name=".Settings" />
+        <activity android:name=".SelectTypeSavedValue" />
+        <activity android:name=".PositionSensor" />
+        <activity android:name=".MotionSensor" />
+        <activity android:name=".EnvironmentalSensors" />
+        <activity android:name=".AccelerometerFeatures" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
