@@ -104,7 +104,6 @@
     <string name="error_display">Sorry, there are no values currently saved for this sensor category!</string>
 
 
-    <string name="selected_value_display_text">Display Saved Value</string>//uguale a
-    read_button_text
+    <string name="selected_value_display_text">Display Saved Value</string>
 
 </resources>
