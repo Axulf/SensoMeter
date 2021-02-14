@@ -22,7 +22,6 @@ public class SelectTypeSavedValue extends AppCompatActivity {
         int id = radiogroup.getCheckedRadioButtonId();
         if (id == -1) {
             Toast.makeText(getBaseContext(),getString(R.string.choose_type),Toast.LENGTH_SHORT).show();
-            //return;
         } else {
             switch (id) {
 

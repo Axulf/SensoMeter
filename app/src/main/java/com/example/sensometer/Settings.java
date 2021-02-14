@@ -31,7 +31,6 @@ public class Settings extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"team.pannia@gmail.com"});
         intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject));
         intent.putExtra(Intent.EXTRA_TEXT, email_edittext.getText().toString());
-        String title = getResources().getString(R.string.chooser_title);
         startActivity(intent);
     }
 }
