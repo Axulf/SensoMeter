@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/white"
+    android:background="@color/white"
     android:orientation="vertical"
     android:id="@+id/LinearMainSelectSavedValue">
     <TextView
@@ -37,16 +37,19 @@
             android:id="@+id/radio_georotation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/geomagnetic_rotation_text" />
         <RadioButton
             android:id="@+id/radio_magnetic_field"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/magnetic_field_text" />
         <RadioButton
             android:id="@+id/radio_proximity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/proximity_text" />
     </RadioGroup>
     <Button

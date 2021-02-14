@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/white"
+    android:background="@color/white"
     android:orientation="vertical"
     android:id="@+id/LinearMainSelectTypeSavedValue">
     <TextView
@@ -37,21 +37,25 @@
             android:id="@+id/radio_temperature"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/ambient_temperature_text" />
         <RadioButton
             android:id="@+id/radio_light"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/light_text" />
         <RadioButton
             android:id="@+id/radio_pressure"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/pressure_text" />
         <RadioButton
             android:id="@+id/radio_humidity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/relative_humidity_text" />
     </RadioGroup>
     <Button

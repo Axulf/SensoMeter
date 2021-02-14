@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/white"
+    android:background="@color/white"
     android:orientation="vertical"
     android:id="@+id/LinearMainSelectSavedValue">
     <TextView
@@ -37,21 +37,25 @@
             android:id="@+id/radio_accelerometer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/motion_accelerometer_text" />
         <RadioButton
             android:id="@+id/radio_gravity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/motion_gravity_text" />
         <RadioButton
             android:id="@+id/radio_gyroscope"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/motion_gyroscope_text" />
         <RadioButton
             android:id="@+id/radio_linear_acceleration"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:text="@string/motion_linear_acceleration_text" />
     </RadioGroup>
     <Button

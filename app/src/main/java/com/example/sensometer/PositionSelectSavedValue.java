@@ -20,12 +20,11 @@ public class PositionSelectSavedValue extends AppCompatActivity {
 
     public void OpenDisplaySelectedValue(View view) {
         RadioGroup radiogroup = (RadioGroup) findViewById(R.id.radio_group);
-        Intent intent = new Intent(this, DisplaySelectedValue.class);
+        Intent intent = new Intent(this, PositionDisplaySavedValue.class);
         int id = radiogroup.getCheckedRadioButtonId();
         if (id == -1) {
-            //no item --> Toast Display
             Toast.makeText(getBaseContext(), getString(R.string.choose_type), Toast.LENGTH_SHORT).show();
-            return;
+            //return;
         } else {
             switch (id) {
 

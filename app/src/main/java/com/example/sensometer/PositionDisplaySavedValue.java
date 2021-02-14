@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.io.File;
 
-public class DisplaySelectedValue extends AppCompatActivity {
+public class PositionDisplaySavedValue extends AppCompatActivity {
 
     TextView tv;
 
@@ -17,15 +17,14 @@ public class DisplaySelectedValue extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_selected_value);
+        setContentView(R.layout.activity_position_display_saved_value);
         Intent intent = getIntent();
-        String selected_file_name = intent.getStringExtra(EnvironmentSelectSavedValue.EXTRA_MESSAGE);
+        String selected_file_name = intent.getStringExtra(PositionSelectSavedValue.EXTRA_MESSAGE);
         File file = this.getFileStreamPath(selected_file_name);
         if ( !file.exists() ) {
-            tv = findViewById(R.id.displayselectedvalue);
+            tv = findViewById(R.id.positiondisplaysavedvalue);
             tv.setText(getString(R.string.error_display));
         } else {
-            //Reading test from file
             try {
                 FileInputStream filein = openFileInput(selected_file_name);
                 InputStreamReader inputread = new InputStreamReader(filein);
@@ -35,12 +34,11 @@ public class DisplaySelectedValue extends AppCompatActivity {
                 int charRead;
 
                 while ((charRead = inputread.read(inputBuffer)) > 0) {
-                    //Char to string conversion
                     String readstring = String.copyValueOf(inputBuffer, 0, charRead);
                     s += readstring;
                 }
-                tv = findViewById(R.id.displayselectedvalue);
                 inputread.close();
+                tv = findViewById(R.id.positiondisplaysavedvalue);
                 tv.setText(s);
 
             } catch (Exception e) {

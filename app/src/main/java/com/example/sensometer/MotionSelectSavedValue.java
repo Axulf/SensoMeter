@@ -19,7 +19,7 @@ public class MotionSelectSavedValue extends AppCompatActivity {
 
     public void OpenDisplaySelectedValue(View view) {
         RadioGroup radiogroup = (RadioGroup) findViewById(R.id.radio_group);
-        Intent intent = new Intent(this, DisplaySelectedValue.class);
+        Intent intent = new Intent(this, MotionDisplaySavedValue.class);
         int id = radiogroup.getCheckedRadioButtonId();
         if (id == -1) {
             //no item --> Toast Display
